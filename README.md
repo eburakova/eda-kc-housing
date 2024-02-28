@@ -19,8 +19,6 @@ date of sale and ID of sale (see full description inside).
 The present dataset is based on the [`house_data`](https://www.kaggle.com/datasets/arathipraj/house-data) 
 and [`house_sales`](https://www.kaggle.com/datasets/andykrause/kingcountysales) datasets on Kaggle.
 
-<--- Run it in Colab button --->
-
 ## Setup the local environment
 
 ### **`macOS`** type the following commands : 
