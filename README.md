@@ -3,6 +3,9 @@
 # **Exploratory data analysis of socially responsible investment opportunities into real estate of King County (WA, USA)**
 This analysis is the showcase of my EDA skills. The names and personalities below are fictional.
 
+
+[<img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>](https://colab.research.google.com/github/eburakova/eda-kc-housing/blob/main/eda-notebook.ipynb)
+
 ## The challenge
 Ms. Erin Robinson - The Client of Nova Piscibus Consulting GmbH - is a socially responsible investor in the real estate. She wishes to improve living conditions in King County (WA, USA) by investing into the development of poor neighborhoods. 
 Our goal at Nova Piscibus is to determing the factors that affect potential returns and are aligned with the Client's. 
@@ -53,5 +56,3 @@ and [`house_sales`](https://www.kaggle.com/datasets/andykrause/kingcountysales) 
     pip install --upgrade pip
     pip install -r requirements.txt
     ```
-
-1. 
