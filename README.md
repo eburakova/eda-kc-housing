@@ -4,7 +4,7 @@
 This analysis is the showcase of my EDA skills. The names and personalities below are fictional.
 
 
-[<img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>](https://colab.research.google.com/github/eburakova/eda-kc-housing/blob/main/eda-notebook.ipynb)
+[<img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>](https://colab.research.google.com/github/eburakova/eda-kc-housing/blob/main/eda_notebook.ipynb)
 
 ## The challenge
 Ms. Erin Robinson - The Client of Nova Piscibus Consulting GmbH - is a socially responsible investor in the real estate. She wishes to improve living conditions in King County (WA, USA) by investing into the development of poor neighborhoods. 
