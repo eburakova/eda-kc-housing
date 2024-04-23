@@ -1,11 +1,12 @@
 <center><img src="https://www.invest4land.com/wp-content/uploads/2021/05/Invest4Land-Investment-Agricultural-Real-Estate-Agroforestry-Secondary-Income-Generation-Eggs-Livestock-Farmlands-Investment-Agriculture-0-1.jpg" height="400"/></center>
 
 # **Exploratory data analysis of socially responsible investment opportunities into real estate of King County (WA, USA)**
-This analysis is the showcase of my EDA skills. The names and personalities below are fictional.
-
+The names and personalities below are fictional.
 
 [<img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>](https://colab.research.google.com/github/eburakova/eda-kc-housing/blob/main/eda_notebook.ipynb)
 
+
+### ❗️👷🏼‍♂️ Under construction ( |||||||||||------| 80% )
 ## The challenge
 Ms. Erin Robinson - The Client of Nova Piscibus Consulting GmbH - is a socially responsible investor in the real estate. She wishes to improve living conditions in King County (WA, USA) by investing into the development of poor neighborhoods. 
 Our goal at Nova Piscibus is to determing the factors that affect potential returns and are aligned with the Client's. 
