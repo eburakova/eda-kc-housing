@@ -19,6 +19,14 @@ date of sale and ID of sale (see full description inside).
 The present dataset is based on the [`house_data`](https://www.kaggle.com/datasets/arathipraj/house-data) 
 and [`house_sales`](https://www.kaggle.com/datasets/andykrause/kingcountysales) datasets on Kaggle.
 
+## Result summary
+
+|High risk / high reward | Conservative |
+|---|---|
+|Central houses in bad condition. They may be still expensive, they would require a lot of resources to renovate. However, there is a large potential for price increase. 	| Houses on the outskirts in average condition. Only minor renovations would be needed (rather, construction works), but the price will never be comparable to the central houses |
+| White center, Rainer Valley and generally the area around the Boeing Field seems in the most dire need of improvement! | A few objects in Carnation and the houses in Fall City can be interest.  |
+| Areas in the north (like Maple Leaf and Lake City) can form a secondary interest. ||
+
 ## Setup the local environment
 
 ### **`macOS`** type the following commands : 
