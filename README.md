@@ -28,6 +28,8 @@ and [`house_sales`](https://www.kaggle.com/datasets/andykrause/kingcountysales) 
 | White center, Rainer Valley and generally the area around the Boeing Field seems in the most dire need of improvement! | A few objects in Carnation and the houses in Fall City can be interest.  |
 | Areas in the north (like Maple Leaf and Lake City) can form a secondary interest. ||
 
+----
+# Running locally
 ## Setup the local environment
 
 ### **`macOS`** type the following commands : 
