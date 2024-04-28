@@ -5,8 +5,6 @@ The names and personalities below are fictional.
 
 [<img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>](https://colab.research.google.com/github/eburakova/eda-kc-housing/blob/main/eda_notebook.ipynb)
 
-
-### ❗️👷🏼‍♂️ Under construction ( |||||||||||||||||||||||||------| 80% )
 ## The challenge
 Ms. Erin Robinson - The Client of Nova Piscibus Consulting GmbH - is a socially responsible investor in the real estate. She wishes to improve living conditions in King County (WA, USA) by investing into the development of poor neighborhoods. 
 Our goal at Nova Piscibus is to determing the factors that affect potential returns and are aligned with the Client's. 
@@ -22,14 +20,23 @@ and [`house_sales`](https://www.kaggle.com/datasets/andykrause/kingcountysales) 
 
 ## Result summary
 
-|High risk / high reward | Conservative |
-|---|---|
-|Central houses in bad condition. They may be still expensive, they would require a lot of resources to renovate. However, there is a large potential for price increase. 	| Houses on the outskirts in average condition. Only minor renovations would be needed (rather, construction works), but the price will never be comparable to the central houses |
-| White center, Rainer Valley and generally the area around the Boeing Field seems in the most dire need of improvement! | A few objects in Carnation and the houses in Fall City can be interest.  |
-| Areas in the north (like Maple Leaf and Lake City) can form a secondary interest. ||
+Nothing affects the price more than
+* the proximity to Seattle downtown 
+* the living area in the house.
+
+Based on extensive data exploration, I suggest the following three objects: 
+
+<img width="686" alt="image" src="https://github.com/eburakova/eda-kc-housing/assets/132762399/a4b4fcb9-3a20-4c88-8c6a-c7bff7786508">
+
+|    |         id |   bedrooms |   bathrooms |   m2_living |   m2_lot |   floors |   waterfront |   view |   condition |   grade |   m2_above |   m2_basement |   yr_built |   yr_renovated |   zipcode |     lat |     long |   m2_living15 |   m2_lot15 | sale_date   |   price |   basement_share |   age |   yrs_since_renovation |   p_per_m2 |   dist_from_center | zone   |   poor_neighborhood_id |
+|---:|-----------:|-----------:|------------:|------------:|---------:|---------:|-------------:|-------:|------------:|--------:|-----------:|--------------:|-----------:|---------------:|----------:|--------:|---------:|--------------:|-----------:|:------------|--------:|-----------------:|------:|-----------------------:|-----------:|-------------------:|:-------|-----------------------:|
+| 69 | 2648500030 |          1 |           1 |     100.334 |  300.074 |        1 |            0 |      0 |           3 |       6 |    100.334 |        0      |       1963 |            nan |     98002 | 47.3075 | -122.217 |       112.412 |    535.117 | 2014-07-25  |  112000 |         0        |    52 |                    nan |     1116.3 |            61.3488 | rural  |                      0 |
+| 24 | 2781250750 |          2 |           2 |     126.347 |  306.577 |        2 |            0 |      0 |           3 |       6 |    126.347 |        0      |       2004 |            nan |     98038 | 47.3489 | -122.022 |       121.702 |    306.577 | 2014-08-28  |  222000 |         0        |    11 |                    nan |     1757.1 |            53.9958 | rural  |                     13 |
+| 91 | 5560000650 |          3 |           1 |     141.211 |  785.024 |        1 |            0 |      0 |           2 |       6 |    104.051 |       37.1609 |       1961 |            nan |     98023 | 47.328  | -122.337 |       122.631 |    785.024 | 2014-12-02  |  135000 |         0.263158 |    54 |                    nan |      956   |            57.5993 | rural  |                     20 |
+
 
 ----
-# Running locally
+# For development
 ## Setup the local environment
 
 ### **`macOS`** type the following commands : 
