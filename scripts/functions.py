@@ -3,6 +3,7 @@ import plotly.graph_objects as go
 import numpy as np
 import pandas as pd
 import seaborn as sns
+import matplotlib.pyplot as plt
 
 PI = np.pi
 R = 6371 # km - Earth radius
@@ -15,8 +16,8 @@ def geoplot(data, size_col, color_col,
     cb_title=color_col.capitalize()
     cb_title=cb_title.replace('_', ' ')
 
-    hover_label=size_col.capitalize()
-    hover_label=hover_label.replace('_', ' ')
+    hover_label = size_col.capitalize()
+    hover_label = hover_label.replace('_', ' ')
     
     marker_sizes = np.exp(data[size_col].max() + 2 - data[size_col])
 
@@ -26,7 +27,7 @@ def geoplot(data, size_col, color_col,
         lat='lat',
         lon='long',
         opacity=alpha,
-        zoom=8,
+        zoom=8.2,
         mapbox_style='open-street-map', 
         size=marker_sizes,
         size_max=marker_max_size,  
@@ -38,8 +39,8 @@ def geoplot(data, size_col, color_col,
 
     # updates markers and tooltips
     fig.update_traces(
-        hovertemplate =
-                f'<b>{hover_label}<b>: ' + data[size_col].astype('str') + '</b><br>' 
+        hovertemplate = data['lat'].round(4).astype(str) + '<br>' + data['long'].round(4).astype(str) + f'<br><b>{cb_title}</b>: ' + data[color_col].astype(str) + f'<br><b>{hover_label}</b>: ' + data[size_col].astype(str) + '<br>' 
+                #f'{data.lat.astype(str)}<br>{data.long.astype(str)}<br><b>{cb_title}: {data[color_col].astype(str)}</b><br><b>{hover_label}</b>: {data[size_col].astype(str)}</b><br>' 
     )
 
     # updating height, width, margins and other layout properties
@@ -64,6 +65,17 @@ def geoplot(data, size_col, color_col,
     return fig
 
 def plot_corr_matrix(corm, labels, ax):
+    """
+    Plots a correlation matrix.
+
+    Parameters:
+    - corm (numpy.ndarray): The correlation matrix to be plotted.
+    - labels (list): List of labels for the columns and rows of the correlation matrix.
+    - ax (matplotlib Axes): The axes object to draw the plot onto.
+
+    Returns:
+    - cm (Axes): The heatmap Axes object.
+    """
     mask = np.zeros_like(corm, dtype='bool')
     mask[np.tril_indices_from(mask)] = True
     mask[np.diag_indices_from(mask)] = False
@@ -119,8 +131,17 @@ def filledline(data, ycol, ystdcol, xcol=None, xlabel='', ylabel='', title='', c
     fig.add_trace(go.Scatter(
         x=x+x_rev,
         y=y_upper+y_lower,
-        fill='toself',
+        fill='tonexty',
         fillcolor=color_fill,
+        line_color='rgba(255,255,255,0)',
+        showlegend=False,    
+    ))
+
+    fig.add_trace(go.Scatter(
+        x=x_rev,
+        y=y_lower,
+        #fill='tonexty',
+        #fillcolor=color_fill,
         line_color='rgba(255,255,255,0)',
         showlegend=False,    
     ))
@@ -139,3 +160,35 @@ def filledline(data, ycol, ystdcol, xcol=None, xlabel='', ylabel='', title='', c
     fig.update_layout(title=title, margin=dict(l=0, r=0, t=80, b=0), 
                       xaxis_title=xlabel, yaxis_title=ylabel, template='seaborn')
     return fig
+
+def plot_feature_kde_row(df, x_vars, y_vars, hue, cmap='inferno', title=None):
+    """
+    Plot Kernel Density Estimate (KDE) plots for each pair of features in a DataFrame.
+
+    Parameters:
+    - df (DataFrame): The input DataFrame.
+    - x_vars (list): List of column names to be plotted on the x-axis.
+    - y_vars (list): List of column names to be plotted on the y-axis.
+    - hue (str): Column name to map plot aspects to different colors.
+    - cmap (str): Name of mpl.Colormap to use for the color dimension.
+    - title (str): Figure suptitle
+
+    Returns:
+    - None
+    """
+     
+    color_dim_unique_vals = sorted(df[hue].unique().tolist())
+    palette = sns.color_palette(cmap, len(color_dim_unique_vals))
+    g = sns.PairGrid(df, x_vars=x_vars, y_vars=y_vars, palette=cmap, hue=hue)
+    g.map_offdiag(sns.kdeplot, cl=5, linewidths=1, alpha=0.999)
+
+    # Manually create a legend
+    legend_elements = [plt.Line2D([0], [0], color=palette[i-min(color_dim_unique_vals)], label=f'{hue.capitalize()} {i}') 
+                    for i in color_dim_unique_vals]
+
+    # Adding legend to the rightmost axis
+    legend = g.axes[-1, -1].legend(handles=legend_elements)
+    legend.set_bbox_to_anchor((1.8, 1.1))
+    if title:
+        plt.gcf().suptitle(title, x=0.1, y=1.1, ha='left', va='top')
+    return plt.gcf()
