@@ -21,7 +21,8 @@ date of sale and ID of sale (see full description inside).
 
 >❗️**The notebooks will not run without the file `data/houses.csv`**. The dataset used here can be reconstructed from the 
 > the [`house_data`](https://www.kaggle.com/datasets/arathipraj/house-data) 
-> and [`house_sales`](https://www.kaggle.com/datasets/andykrause/kingcountysales) datasets on Kaggle - with a little bit of > > effort and no guarantee of reproducability.
+> and [`house_sales`](https://www.kaggle.com/datasets/andykrause/kingcountysales) datasets on Kaggle - with a little bit of
+> effort and no guarantee of reproducibility.
 
 ## Result summary
 
