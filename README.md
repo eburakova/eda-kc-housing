@@ -45,7 +45,7 @@ Based on extensive data exploration, I suggest the following three objects:
 # For development
 ## Setup the local environment
 
-### **`macOS`** type the following commands : 
+### **`macOS` or `Linux`**:
 
 - Install the virtual environment and the required packages by following commands:
 
@@ -56,8 +56,7 @@ Based on extensive data exploration, I suggest the following three objects:
     pip install --upgrade pip
     pip install -r requirements.txt
     ```
-### **`WindowsOS`** type the following commands :
-
+### **`Windows`**: 
 - Install the virtual environment and the required packages by following commands.
 
    For `PowerShell` CLI :
