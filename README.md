@@ -15,14 +15,14 @@ from sales **between May 2014 and May 2015** and was provided by [@neuefische](h
 Along with house price it consists of information on 18 house features, 
 date of sale and ID of sale (see full description inside).
 
-The present dataset is based on the [`house_data`](https://www.kaggle.com/datasets/arathipraj/house-data) 
-and [`house_sales`](https://www.kaggle.com/datasets/andykrause/kingcountysales) datasets on Kaggle.
-
 ## Navigation
 * [Data cleaning](cleaning.ipynb) 
 * [Analysis](eda-notebook.ipynb)
 
-  **The notebook will not run without the dataset**
+>❗️**The notebooks will not run without the file `data/houses.csv`**. The dataset used here can be reconstructed from the 
+> the [`house_data`](https://www.kaggle.com/datasets/arathipraj/house-data) 
+> and [`house_sales`](https://www.kaggle.com/datasets/andykrause/kingcountysales) datasets on Kaggle - with a little bit of > > effort and no guarantee of reproducability.
+
 ## Result summary
 
 Nothing affects the price more than
