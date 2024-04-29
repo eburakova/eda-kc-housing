@@ -160,6 +160,8 @@ cython_debug/
 #.idea/
 
 # Data folder
-data
+data/*.csv
+data/*.numbers
+data/*.xlsx
 pygwalk.ipynb
 eda_pyg.json

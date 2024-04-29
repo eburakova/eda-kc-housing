@@ -1,0 +1,39 @@
+work	work_cost_median	work_cost_error_median	work_cost_mean	work_cost_mean_error	outsourced	guessed_initial_condition_min
+Earthquake repair	3500	0			Yes	1
+Fire repair	500	0			No	1
+Disaster repair	10000	0			No	1
+Recreation room renovation	16000	0			Yes	3
+Kitchen renovation	80000	25180			Yes	2
+Kitchen renovation	5000	0			No	2
+Bath remodelling	8000	2800			Mixed	2
+Bath remodelling	9170	2655			Yes	2
+Kitchen remodelling	8000	2800			Mixed	2
+Kitchen remodelling	9170	2655			Yes	2
+Exterior terrace	6250	2182			Yes	3
+Exterior terrace	2000	887			No	3
+Exterior roofing	8750	2038	10735	15785	Yes	2
+Exterior roofing	3000	1261	5486	8166	No	2
+Windows and doors	3200	790			Yes	1
+Windows and doors	2000	402			Mixed	1
+Chimney and other	1800	600			Yes	2
+Insulation	1800	596	1974	2500	Yes	2
+Insulation	400	132			No	2
+Water pipes	1200	585			Yes	2
+Other plumbing fixtures	995	243			Yes	3
+Other plumbing fixtures	300	28			No	3
+Electrical works	800	223			Mixed	2
+Security systems	365	119			Yes	4
+Security systems	400	75			Mixed	4
+Floor and ceiling carpeting	3000	56			Yes	2
+Floor and ceiling carpeting	1000	400			No	2
+Air conditioning (HVAC)	4000	730			Yes	3
+Septic tank	5000	0			No	2
+Large appliances	800	104			Yes	3
+Large appliances	500	100			No	3
+Drive- and walkways	2000	877			Yes	3
+Drive- and walkways	900	417			Mixed	3
+Fences	1500	410			Yes	3
+Fences	600	261			No	3
+Sprinkler system and landscaping	2600	787			Yes	4
+Sprinkler system and landscaping	800	364			No	4
+Sprinkler system and landscaping	1000	22			Mixed	4
