@@ -3,7 +3,7 @@
 # **Exploratory data analysis of socially responsible investment opportunities into real estate of King County (WA, USA)**
 The names and personalities below are fictional.
 
-[<img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>](https://colab.research.google.com/github/eburakova/eda-kc-housing/blob/main/eda_notebook.ipynb)
+[<img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Read In Colab"/>](https://colab.research.google.com/github/eburakova/eda-kc-housing/blob/main/eda_notebook.ipynb)
 
 ## The challenge
 Ms. Erin Robinson - The Client of Nova Piscibus Consulting GmbH - is a socially responsible investor in the real estate. She wishes to improve living conditions in King County (WA, USA) by investing into the development of poor neighborhoods. 
@@ -18,6 +18,11 @@ date of sale and ID of sale (see full description inside).
 The present dataset is based on the [`house_data`](https://www.kaggle.com/datasets/arathipraj/house-data) 
 and [`house_sales`](https://www.kaggle.com/datasets/andykrause/kingcountysales) datasets on Kaggle.
 
+## Navigation
+* [Data cleaning](cleaning.ipynb) 
+* [Analysis](eda-notebook.ipynb)
+
+  **The notebook will not run without the dataset**
 ## Result summary
 
 Nothing affects the price more than
