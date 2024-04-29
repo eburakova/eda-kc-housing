@@ -12,8 +12,8 @@ Our goal at Nova Piscibus is to determing the factors that affect potential retu
 ## The dataset
 The dataset consists of Price of Houses in King County, Washington 
 from sales **between May 2014 and May 2015** and was provided by [@neuefische](https://github.com/neuefische). 
-Along with house price it consists of information on 18 house features, 
-date of sale and ID of sale (see full description inside).
+Along with the house sale history, it provides the information on 18 house features, 
+such as house area, lot area, location, etc. (see full description inside the [main document](eda-notebook.ipynb)).
 
 ## Navigation
 * [Data cleaning](cleaning.ipynb) 
