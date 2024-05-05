@@ -1,3 +1,6 @@
+### THIS IS A ONE PAGE THE DATA EXPLORATION APP
+### MENT FOR THE INTERNAL USE (NOT FOR THE CLINTS)
+
 import streamlit as st
 import pandas as pd
 
