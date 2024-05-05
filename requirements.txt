@@ -133,3 +133,4 @@ yarl==1.9.4
 zipp==3.17.0
 kaleido
 scikit_learn==1.4.2
+streamlit
